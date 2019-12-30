@@ -1,0 +1,14 @@
+//colors
+.u {
+  &-colormain           { color: var(--color-green1) }
+  &-colorsecondary      { color: var(--color-green2) }
+  &-colorblack          { color: var(--color-black) }
+  &-colorwhite          { color: var(--color-white) }
+}
+// backgrounds
+.u {
+  &-bg-colormain        { background-color: var(--color-green1) }
+  &-bg-colorsecondary   { background-color: var(--color-green2) }
+  &-bg-colorblack       { background-color: var(--color-black) }
+  &-bg-colorwhite       { background-color: var(--color-white) }
+}

@@ -1,0 +1,74 @@
+body {
+  padding-top: var(--mainHeaderHeigth);
+  &.showmenu {
+    overflow-y: hidden;
+    .mainheader {
+      height: 100vh;
+    }
+    .mainlogo,
+    .burguer {
+      align-self: flex-start;
+    }
+    .mainnav,
+    .lang {
+      display: block;
+    }
+    .mainnav {
+      flex-basis: 100%;
+    }
+    .burguer {
+      flex-basis: calc(100% - 18rem);
+      text-align: right;
+      span {
+        color: var(--color-green1);
+        &:first-child {
+          transform: rotate(37deg);
+        }
+        &:nth-child(2) { display: none; }
+        &:last-child {
+          transform: rotate(-37deg);
+        }
+      }
+    }
+  }
+}
+
+.burguer {
+  &_btn {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    margin: 0;
+    padding: .2rem 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    @include mq('screenMd'){
+      display: none;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    span {
+      display: block;
+      background-color: var(--color-black);
+      width: 8rem;
+      margin: 0 auto;
+      height: .4rem;
+      transform-origin: top left;
+      transition: transform .25s linear;
+    }
+  }
+}

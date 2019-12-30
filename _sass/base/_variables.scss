@@ -1,0 +1,67 @@
+// MIXINs
+// Breakpoints (mq adapted to gridlex)
+$breakpoints: (
+  "screenXs": 576px,
+  "screenSm": 768px,
+  "screenMd": 1024px,
+  "screenLg": 1280px
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+  //how to use example 1: for min-width it's not necessary add min
+  // .site-header {
+  //   padding: 2rem;
+  //   font-size: 1.8rem;
+  //   @include mq('screenXs') {
+  //       padding-top: 4rem;
+  //       font-size: 2.4rem;
+  //   }
+  // }
+
+  //how to use example 2: for max-width it's necessary add max to include
+  // .site-header {
+  //   padding: 2rem;
+  //   font-size: 1.8rem;
+  //   @include mq('screenXs', max) {
+  //       padding-top: 4rem;
+  //       font-size: 2.4rem;
+  //   }
+  // }
+
+
+
+
+:root {
+  //colors: https://coolors.co/32292f-99e1d9-f0f7f4-70abaf-705d56
+  --color-black:  #32292f;
+  --color-white:  #f0f7f4;
+  --color-green1: #88B12F;
+  --color-green2: #88B12F;
+  --color-wenge:  #705d56;
+
+  //font size:
+  --base-size: 2.1rem;
+
+  //typo:
+  --font-title:   'Palanquin Dark', sans-serif;
+  --font-default: 'Mukta Mahee', sans-serif;
+
+  //sizes:
+  --spacing: 1rem;
+  --mainHeaderHeigth: 6rem;
+
+  @include mq('screenMd') {
+    --mainHeaderHeigth: 12rem;
+  }
+
+}

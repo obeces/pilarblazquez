@@ -1,0 +1,65 @@
+.mainheader {
+  background: var(--color-green2);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.1);
+  @include mq('screenMd'){
+    height: var(--mainHeaderHeigth);
+  }
+  @include mq('screenLg'){
+    padding: 1rem 5% 1rem 10%;
+  }
+}
+
+.mainlogo {
+  flex: 0 0 auto;
+  margin-right: auto;
+  width: 18rem;
+  color: var(--color-white);
+  @include mq('screenLg'){
+    width: 25rem;
+  }
+}
+
+.navwrap {
+  max-width: 64rem;
+  flex-grow: 1;
+}
+
+.burguer {
+  &_btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    @include mq('screenMd'){
+      display: none;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}

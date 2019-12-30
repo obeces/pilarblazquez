@@ -1,0 +1,44 @@
+.hemeroteca {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 200px 200px;
+  grid-gap: calc( 2*var(--spacing) );
+
+  &__group {
+    background-color: var(--color-white);
+    padding-bottom: var(--spacing);
+    height: 30rem;
+    overflow: hidden;
+  }
+
+  &__title {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: var(--spacing);
+    font-size: calc( 1.5*var(--spacing) );
+    text-transform: uppercase;
+  }
+
+  &__items {
+    padding: var(--spacing);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80%;
+  }
+
+  &__item {
+    margin-bottom: calc( 2*var(--spacing) );
+    margin-left: calc(2*var(--spacing));
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: calc(-2*var(--spacing));
+      content: '●';
+      color: var(--color-green2);
+    }
+  }
+}
