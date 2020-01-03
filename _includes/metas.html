@@ -1,24 +1,19 @@
-  <meta name="author" content="Lorem">
-  <meta name="description" content="lorem">
-  <meta name="keywords" content="keywords">
-
+  <meta name="theme-color" content="#2D7DA8">
+  <meta name="author" content="{{ page.author }}">
+  <meta name="description" content="{{ page.meta }}">
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Página web de Lorem">
-  <meta itemprop="description" content="">
-  <meta itemprop="image" content="https://lorem.com/assets/img/placeholder.jpg">
-
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.meta }}">
+  <meta itemprop="image" content="{{ site.url }}{{ '/assets/img/' | relative_url }}{{ page.img }}">
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://lorem.com">
+  <meta property="og:url" content="{{ page.permalink }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Página web de Lorem">
-  <meta property="og:description" content="lorem">
-  <meta property="og:image" content="https://lorem.com/assets/img/placeholder.jpg">
-  <meta property="og:image:secure_url" content="https://lorem.com/assets/img/placeholder.jpg">
-
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.meta }}">
+  <meta property="og:image" content="{{ site.url }}{{ '/assets/img/' | relative_url }}{{ page.img }}">
+  <meta property="og:image:secure_url" content="{{ site.url }}{{ '/assets/img/' | relative_url }}{{ page.img }}">
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Página web de Lorem">
-  <meta name="twitter:description" content="lorem">
-  <meta name="twitter:image" content="https://lorem.com/assets/img/placeholder.jpg">
-
-  <meta name="theme-color" content="#ffffff">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.meta }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ '/assets/img/' | relative_url }}{{ page.img }}">

@@ -1,0 +1,17 @@
+<div class="main-header {{ include.fixed }}">
+  <div class="main-header__inside">
+    <header class="main-logo">
+      <a href="/" class="main-logo__name"><div>Pilar</div><div>Blázquez</div></a>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        {%- for item in site.data.navigation -%}
+        <li class="main-nav__link">
+          <a href="/#{{item.link}}"><span>{{item.link}}</span></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

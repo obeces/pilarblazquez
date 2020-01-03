@@ -2,7 +2,10 @@
 <html lang="{{ page.lang }}">
 {%- include html-head.html -%}
 <body>
-  {% include header.html %}
-  {{content}}
+{{content}}
+
+{%- include cookies-advise.html -%}
+<script src="/assets/js/scripts.js"></script>
+
 </body>
 </html>

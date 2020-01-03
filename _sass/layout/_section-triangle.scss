@@ -1,0 +1,72 @@
+.section-triangle {
+  --triangleRatio: 6rem;
+  $this: &;
+
+  position: relative;
+  padding: 3.5rem .5rem var(--triangleRatio);
+  min-height: 500px;
+  z-index: 1;
+
+  @include mq('screenSm'){
+    --triangleRatio: 8rem;
+    padding: 3.5rem calc( var(--spacing) * 2) var(--triangleRatio);
+  }
+
+  &:after,
+  &:before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 3rem);
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    height: var(--triangleRatio);
+    width: calc(100% + 3rem);
+    background: var(--color-main);
+    z-index: -1;
+  }
+
+  &:before {
+    --clip: 0px 0px, 100% 0px, 100% calc( var(--triangleRatio)/2 ), 0px var(--triangleRatio);
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon( var(--clip) );
+    clip-path: polygon( var(--clip) );
+  }
+
+  &:after {
+    --clip: 0px var(--triangleRatio), 0px calc( var(--triangleRatio)/1.5 ), 100% 0px, 100% var(--triangleRatio);
+    bottom: -1px;
+    left: 0;
+    -webkit-clip-path: polygon( var(--clip) );
+    clip-path: polygon( var(--clip) );
+  }
+
+
+  &:nth-child(odd) {
+    &:before {
+      --clip: 100% var(--triangleRatio), 0px calc( var(--triangleRatio)/2 ), 0 0, 100% 0rem;
+      -webkit-clip-path: polygon( var(--clip) );
+      clip-path: polygon( var(--clip) );
+    }
+
+    &:after {
+      --clip: 0px 0px, 100% calc( var(--triangleRatio)/1.5 ), 100% var(--triangleRatio), 0px var(--triangleRatio);
+      -webkit-clip-path: polygon( var(--clip) );
+      clip-path: polygon( var(--clip) );
+    }
+  }
+
+  &__title {
+    color: var(--color-white);
+    #{$this}:nth-child(even) &,
+    #{$this}:nth-child(odd) & {
+      transform: translate(0,-5rem);
+    }
+    #{$this}:first-of-type & {
+      transform: translate(0,-3.5rem);
+      @include mq('screenSm'){
+        transform: translate(0,-1.5rem);
+      }
+    }
+  }
+}

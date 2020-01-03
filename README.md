@@ -45,7 +45,7 @@ Follow the next steps for create a post:
 3. Insert the rest of post: paragraphs, headers, images... You can see info about markdown syntax [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
 Main snippets below:
 
-  * link: [Nunc accumsan augue convallis](https://www.novutrip.com){:target='&#95;blank'}
+  * link: [Nunc accumsan augue convallis](https://www.google.com){:target='&#95;blank'}
   * bold: --> ```**Negrita**``` --> **Negrita**
   * italic: --> ```*italic*```  --> *italic*
   * ordered list:

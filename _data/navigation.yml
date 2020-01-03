@@ -1,6 +1,6 @@
-- link: hemeroteca
-  name: Hme
+- link: textos
+  # name: textos
 - link: cv
-  name: vc
+  # name: cv
 - link: blog
-  name: logb
+  # name: blog

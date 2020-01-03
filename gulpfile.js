@@ -91,6 +91,10 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: '_site'
     },
+    socket: {
+        domain: 'localhost:4000'
+    }
+
   });
 });
 

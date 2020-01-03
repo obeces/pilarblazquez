@@ -1,18 +1,19 @@
 <footer class="mainfooter">
-  <ul class="legal-links">
-    {%- for item in site.data.footer-links -%}
-    <li><a href="{{ site.url }}/legal/{{ item.link }}">{{item.name}}</a></li>
-    {%- endfor %}
+  <small class="u-color-white">Esta web pertenece a Pilar Blázquez Correas. Puedes contactar a través de:</small>
+  <ul class="u-flex u-flex--centerh u-marg-10--top">
+    <li>
+      <a href="{{ site.linkedin }}" target="_blank" title="Ver perfil en Twitter">
+        <div class="u-marg-10--lr pbc-icon pbc-icon--color-white pbc-icon--w32">
+          {% include icons/pbc-icon_linkedin.svg %}
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="{{ site.twitter }}" target="_blank" title="Ver perfil en Linkedin">
+        <div class="u-marg-10--lr pbc-icon pbc-icon--color-white pbc-icon--w32">
+          {% include icons/pbc-icon_twitter.svg %}
+        </div>
+      </a>
+    </li>
   </ul>
 </footer>
-
-<div id="cookies" class="cookies">
-  <div class="cookies_content">
-    <p>
-      Utilizamos cookies propias y de terceros para mejorar tu experiencia y nuestros servicios, analizando la navegación en nuestro sitio web. Si continuúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a href="/legal/politica-cookies.html">política de cookies</a>
-    </p>
-    <button class="ipdbtn ipdbtn--white ipdbtn--small" type="button">Aceptar</button>
-  </div>
-</div>
-
-<script src="/assets/js/scripts.js"></script>

@@ -1,34 +1,10 @@
 .mainfooter {
-  background: var(--color-wenge);
-  color: var(--color-wenge);
+  background: var(--color-main);
+  color: var(--color-secondary);
   text-align: center;
-  padding: 3rem 1rem;
-  font-size: 1.5rem;
-  margin-top: calc( 2 * var(--spacing) );
+  padding: 0 1rem 5rem;
 }
 
-.legal-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li {
-    margin: 0 2rem;
-    position: relative;
-    &:after {
-      position: absolute;
-      content: '|';
-      top: 50%;
-      left: -2rem;
-      transform: translate(0,-50%);
-    }
-    &:first-child:after {
-      display: none;
-    }
-    a {
-      color: var(--color-white);
-    }
-  }
-}
 
 .cookies {
   display: none;

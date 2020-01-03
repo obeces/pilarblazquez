@@ -12,7 +12,7 @@ _release
 node_modules/
 .DS_Store
 .idea/*
-_site/*
+_site/
 extensions/
 gems
 specifications

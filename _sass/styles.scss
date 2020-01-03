@@ -1,28 +1,39 @@
-//base
-@import 'base/variables';
-@import 'base/normalize';
-@import 'base/basic';
-@import 'base/icons';
-@import 'base/typo';
+//settings
+@import 'settings/settings';
 
-//helpers
-@import 'helpers/align';
-@import 'helpers/colors';
-@import 'helpers/spacing';
-@import 'helpers/misc';
+//tools
+@import 'tools/tools';
 
-//grid
-@import 'gridlex/gridlex';
+//generic
+@import 'generic/normalize';
+@import 'generic/custom-properties';
+
+//elements
+@import 'elements/basic';
 
 //layout
-@import 'layout/layout';
+@import 'layout/base';
+@import 'layout/home-top';
+@import 'layout/section-triangle';
+@import 'layout/grid-cv';
 
 //components
+@import 'components/headings';
+@import 'components/icons';
 @import 'components/mainheader';
 @import 'components/mainnav';
-@import 'components/menumobile';
 @import 'components/mainfooter';
 @import 'components/buttons';
 @import 'components/form';
 @import 'components/custominputs';
 @import 'components/hemeroteca';
+@import 'components/lists';
+@import 'components/mainfooter';
+@import 'components/post';
+@import 'components/error404';
+
+//utilities
+@import 'utilities/align';
+@import 'utilities/colors';
+@import 'utilities/spacing';
+@import 'utilities/misc';

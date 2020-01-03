@@ -1,0 +1,20 @@
+---
+layout: column-withheader
+excerpt_separator: <!--more-->
+---
+
+<div class="post">
+  <figure>
+    <img class="lozad" data-src="{{ '/assets/img/' | relative_url }}{{ page.img }}" alt="{{ page.imagealt }}" />
+  </figure>
+  <h1 class="heading-2">{{page.title}}</h1>
+  <div class="post__meta">
+    <div class="post__author">{{ page.author }}</div>
+    <div class="post__date">
+      {{ page.date | date: "%d/%m/%Y" }}
+    </div>
+  </div>
+  <div class="u-marg-20--top heading-4">
+{{content}}
+  </div>
+</div>

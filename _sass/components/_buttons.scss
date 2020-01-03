@@ -1,4 +1,4 @@
-.ipdbtn {
+.btn {
   display: inline-block;
   margin-bottom: 0;
   text-align: center;
@@ -24,11 +24,6 @@
 
   &--block {
     width: 100%;
-  }
-
-  &--white {
-    border-color: var(--color-white);
-    color: var(--color-white);
   }
 
   &--noclick {

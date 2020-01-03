@@ -2,41 +2,114 @@
 layout: column
 ---
 
+<div class="container u-bg-color-white">
 
-<div class="container">
-  <h1 class="title">Home</h1>
-  <span class="pbc-icon pbc-icon--w32 pbc-icon--colormain">
-    {% include icons/prefix-icon_example.svg %}
-  </span>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+  <div class="home-top">
+    {% include main-header.html %}
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+    <div class="home-pb">
+      <figure>
+        <img class="home-pb__img" src="/assets/img/pb.jpg" />
+      </figure>
+      <div>
+        <ul class="u-flex u-flex--centerh">
+          <li>
+            <a href="{{ site.linkedin }}" target="_blank" title="Ver perfil en Twitter">
+              <div class="u-marg-10--lr pbc-icon pbc-icon--w32">
+                {% include icons/pbc-icon_linkedin.svg %}
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.twitter }}" target="_blank" title="Ver perfil en Linkedin">
+              <div class="u-marg-10--lr pbc-icon pbc-icon--w32">
+                {% include icons/pbc-icon_twitter.svg %}
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="home-lead">
+      <div class="heading-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+    </div>
+  </div>
+
+  <section id="textos" class="section-triangle">
+    <h2 class="section-triangle__title heading-2">Textos</h2>
+    <p class="heading-4 u-marg-30--top"><strong>Selección de artículos, reportajes y posts publicados en varios medios y blogs</strong></p>
+    {%- include hemeroteca.html -%}
+  </section>
+
+  <section id="cv" class="section-triangle">
+    <h2 class="section-triangle__title heading-2">CV</h2>
+    {%- include cv.html -%}
+  </section>
+
+  <section id="blog" class="section-triangle">
+    <h2 class="section-triangle__title heading-2">Blog</h2>
+    <ul class="home-post">
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">
+            <article>
+              <figure>
+                <img class="lozad" data-src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.imgalt }}" />
+              </figure>
+              <h3 class="heading-3 u-marg-10--tb">{{ post.title }}</h3>
+              <div class="heading-4">{{ post.excerpt }}</div>
+            </article>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
 </div>
+
+<script>
+  const makeNavLinksSmooth = function() {
+    const tabLinks = document.querySelectorAll( '.main-nav__link a' );
+    Array.prototype.forEach.call(tabLinks, function(el){
+      el.addEventListener( 'click', function(e) {
+        e.preventDefault();
+        document.querySelector( el.hash ).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  };
+
+  const spyScrolling = () => {
+    const sections = document.querySelectorAll('.section-triangle');
+
+    window.onscroll = () => {
+      const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+      const headerLayer = document.querySelector('.main-header');
+
+      if ( scrollPos >= headerLayer.offsetHeight - 100 ) {
+        headerLayer.classList.add('fixed');
+      } else {
+        headerLayer.classList.remove('fixed');
+        document.querySelector('.main-nav__link--active').classList.remove('main-nav__link--active');
+      }
+      Array.prototype.forEach.call(sections, function(el){
+        if (el.offsetTop - 130 <= scrollPos ) {
+          const id = el.getAttribute('id');
+
+          if( document.querySelector('.main-nav__link--active') ){
+            document.querySelector('.main-nav__link--active').classList.remove('main-nav__link--active');
+          }
+          document.querySelector(`a[href*=${ id }]`).parentNode.classList.add('main-nav__link--active');
+        }
+      })
+    }
+  }
+
+  makeNavLinksSmooth();
+  spyScrolling();
+</script>

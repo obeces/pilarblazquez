@@ -1,13 +1,8 @@
 (function(){
 
-  // burguer menu
-  document.querySelector('#burguer').addEventListener('click', function(){
-    document.body.classList.toggle('showmenu');
-  });
-
   // cookie layer
-  var cookielayer = document.querySelector('#cookies');
-  var btnCookie = cookies.querySelector('button');
+  var cookielayer = document.querySelector('#cookies-advise');
+  var btnCookie = cookielayer.querySelector('button');
   btnCookie.addEventListener('click', function(){
     cookielayer.classList.remove('cookies--visible');
     createCookie();
@@ -15,7 +10,7 @@
   function createCookie(){
     var date = new Date();
     date.setTime(date.getTime()+(365*24*60*60*1000));
-    document.cookie = 'novutrip-blog' + "=" + 'novutrip-blog' + "; expires=" + date.toGMTString() + "; path=/";
+    document.cookie = 'pilarblazquez' + "=" + 'pilarblazquez' + "; expires=" + date.toGMTString() + "; path=/";
   }
   function accessCookie(cookieName){
     var name = cookieName + "=";
@@ -29,7 +24,7 @@
     return "";
   }
   function checkCookie(){
-    var blognvtcookie = accessCookie("novutrip-blog");
+    var blognvtcookie = accessCookie("pilarblazquez");
     if (blognvtcookie == "") {
       cookielayer.classList.add('cookies--visible');
     }
@@ -38,39 +33,6 @@
     checkCookie();
   };
 
-  // newsletterform
-  var $newsletter = document.querySelector('#newsletter') || false;
-  var $newsletterForm = document.querySelector('#newsletter-form') || false;
-  var $feedback = document.querySelector('#feedback') || false;
-
-  if( $newsletterForm ) {
-    $newsletterForm.addEventListener("submit", function(evt) {
-      evt.preventDefault();
-      var body = JSON.stringify({
-          email: document.querySelector('#email').value,
-          referred: 'blog.novutrip'
-      });
-
-      var request = new XMLHttpRequest();
-      request.open('POST', evt.srcElement.action, true);
-      request.setRequestHeader("accept", "application/json");
-      request.setRequestHeader("content-type", "application/json");
-      request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-          // Success!
-          var data = body;
-          $newsletter.classList.add('newsletter--ok');
-        } else if ( request.status === 409 ) {
-          $newsletter.classList.add('newsletter--ko');
-          $feedback.querySelector('p').innerText = 'Este correo ya se ha registrado anteriormente';
-        } else {
-          $newsletter.classList.add('newsletter--ko');
-          $feedback.querySelector('p').innerText = '¡Se ha producido un error , inténtalo más tarde!';
-        }
-      };
-      request.send(body);
-    });
-  }
 
   //lazy
   var lazyImages = document.querySelectorAll('.lozad');

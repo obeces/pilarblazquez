@@ -1,0 +1,37 @@
+.container {
+  max-width: 114rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  &--narrow {
+    max-width: 90rem;
+  }
+}
+
+.wrapfull {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 12rem;
+
+  &--withheader {
+    @include mq('screenSm'){
+      padding-top: 11rem;
+    }
+  }
+
+  &__container {
+    padding-bottom: 10rem;
+    height: 100%;
+    > .container {
+      height: 100%;
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.aptitudes {
+  transform: rotate(-3deg);
+  margin-bottom: calc( var(--spacing)*8 );
+}

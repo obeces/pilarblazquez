@@ -2,10 +2,10 @@
 title: Titulo
 email: obeces@gmail.com
 description: "Jekyll project for a simple page"
-url: "https://web.es" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pilarblazquez.es" # the base hostname & protocol for your site, e.g. http://example.com
 future: true
 
-name: web.es
+name: pilarblazquez.es
 base-url: ""
 
 #environment: production
@@ -14,6 +14,9 @@ base-url: ""
 ## Tracker
 ## google_analytics: UA-130966275-1
 
+## Social
+linkedin: "https://www.linkedin.com/pilarblazquez"
+twitter: "https://www.twitter.com/praxagora21"
 
 # keywords: ''
 
@@ -40,7 +43,7 @@ plugins:
 # Descomentar línea url para permitir que el plugin sitemap genere automáticamente el archivo robots.txt si no existe
 # Aunque no permite añadir más contenido al robots.txt
 # Sitemap
-# url: "https://empresas.novutrip.com" # the base hostname & protocol for your site
+# url: "https://pilarblazquez.es" # the base hostname & protocol for your site
 # End
 
 defaults:
@@ -48,7 +51,7 @@ defaults:
      scope:
          path: ""
      values:
-         author: "obeces"
+         author: "Pilar Blázquez"
          layout: base
          lang: es
          base-url: "/"
