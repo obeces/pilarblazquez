@@ -1,11 +1,11 @@
 # Site settings
-title: Titulo
+title: pilarblazquez.me
 email: obeces@gmail.com
-description: "Jekyll project for a simple page"
-url: "https://pilarblazquez.es" # the base hostname & protocol for your site, e.g. http://example.com
+description: "Página personal de Pilar Blázquez"
+url: "https://pilarblazquez.me" # the base hostname & protocol for your site, e.g. http://example.com
 future: true
 
-name: pilarblazquez.es
+name: pilarblazquez.me
 base-url: ""
 
 #environment: production
@@ -43,7 +43,7 @@ plugins:
 # Descomentar línea url para permitir que el plugin sitemap genere automáticamente el archivo robots.txt si no existe
 # Aunque no permite añadir más contenido al robots.txt
 # Sitemap
-# url: "https://pilarblazquez.es" # the base hostname & protocol for your site
+# url: "https://pilarblazquez.me" # the base hostname & protocol for your site
 # End
 
 defaults:
@@ -55,6 +55,6 @@ defaults:
          layout: base
          lang: es
          base-url: "/"
-         origin_url: "https://pilarblazquez.es"
+         origin_url: "https://pilarblazquez.me"
 
 exclude: ['package.json', 'node_modules', 'Gemfile', 'Gemfile.lock', 'LICENSE', 'gulpfile.js', 'README.md']

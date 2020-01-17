@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://pilarblazquez.es/sitemap.xml
+Sitemap: https://pilarblazquez.me/sitemap.xml
