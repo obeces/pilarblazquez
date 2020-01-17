@@ -12,7 +12,7 @@ base-url: ""
 #newsletter_endpoint: 'https://prueba4.free.beeceptor.com/my/api/path'
 
 ## Tracker
-## google_analytics: UA-130966275-1
+google_id: UA-156454891-1
 
 ## Social
 linkedin: "https://www.linkedin.com/pilarblazquez"
